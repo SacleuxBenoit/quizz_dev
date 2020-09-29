@@ -8,7 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Quizz dev</h1>
+    
+    <header>
+        <h1>Quizz dev</h1>
+    </header>
 
     <div class="divHTML">
         <button value="HTML" class="HTML">HTML</button>
