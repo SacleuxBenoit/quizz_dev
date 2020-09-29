@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'HTML HTML CSS CSS'
+    'JS JS PHP PHP'
+    ;
+}
+
+.HTML, .CSS, .JS, .PHP{
+    font-size: 5em;
+    cursor: pointer;
+    height: 3em;
+    width: 3em;
+}
+
+header{
+    grid-area: header;
+}
+
+.divHTML{
+    grid-area: HTML;
+}
+
+.divCSS{
+    grid-area: CSS;
+}
+
+.divJS{
+    grid-area: JS;
+}
+
+.divPHP{
+    grid-area: PHP;
+}
