@@ -14,19 +14,19 @@
     </header>
 
     <div class="divHTML">
-        <button value="HTML" class="HTML">HTML</button>
+        <a href="./layouts/html.php"><button value="HTML" class="HTML">HTML</button></a>
     </div>
 
     <div class="divCSS">
-        <button value="CSS" class="CSS">CSS</button>
+        <a href="./layouts/css.php"><button value="CSS" class="CSS">CSS</button></a>
     </div>
 
     <div class="divJS">
-        <button value="JS" class="JS">JS</button>
+        <a href="#"><button value="JS" class="JS">JS</button></a>
     </div>
 
     <div class="divPHP">
-        <button value="PHP" class="PHP">PHP</button>
+        <a href="#"><button value="PHP" class="PHP">PHP</button></a>
     </div>
 </body>
 </html>
