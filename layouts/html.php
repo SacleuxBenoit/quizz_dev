@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>HTML</h1>
 
     <?php
         include('../database/connection_database.php');
@@ -17,29 +17,30 @@
 
         while($get_question = $question->fetch()){
             ?>
-                
+                <form action="#" method="post">
                     <div class="container">
                         <?php echo $get_question['question']?>
 
                         <p>
-                            <input type="checkbox" id="firstAnswer" name="answer">
+                            <input type="checkbox" id="firstAnswer" name="answer" value="<?php $get_question['first_answer'] ?>">
                             <label for="firstAnswer"><?php echo $get_question['first_answer'] ?></label>
                         </p>
 
                         <p>
-                            <input type="checkbox" id="secondAnswer" name="answer">
+                            <input type="checkbox" id="secondAnswer" name="answer" value="<?php $get_question['second_answer'] ?>">
                             <label for="secondAnswer"><?php echo $get_question['second_answer'] ?></label>
                         </p>
                         
                         <p>
-                            <input type="checkbox" id="thirdAnswer" name="answer">
+                            <input type="checkbox" id="thirdAnswer" name="answer" value="<?php $get_question['third_answer'] ?>">
                             <label for="thirdAnswer"><?php echo $get_question['third_answer'] ?></label>
                         </p>
 
-                            <input type="Submit" value="Submit">
-
+                        <input type="submit" value="submit">
                     </div>
+                </form>
             <?php
+
         }
             ?>
 
