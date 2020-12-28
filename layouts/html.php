@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HTML</h1>
+    <h1><a href="../index.php">HTML</a></h1>
 
     <?php
         include('../database/connection_database.php');
