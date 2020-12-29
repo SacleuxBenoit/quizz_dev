@@ -8,7 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1><a href="../index.php">HTML</a></h1>
+
+    <h1 class="categorytitles"><a href="../index.php">HTML</a></h1>
 
     <?php
         include('../database/connection_database.php');
@@ -17,32 +18,33 @@
 
         while($get_question = $question->fetch()){
             ?>
+                <div class="container">
+
                 <form action="#" method="post">
-                    <div class="container">
-                        <?php echo $get_question['question']?>
+                    <?php echo $get_question['question']?>
 
-                        <p>
-                            <input type="checkbox" id="firstAnswer" name="answer" value="<?php $get_question['first_answer'] ?>">
-                            <label for="firstAnswer"><?php echo $get_question['first_answer'] ?></label>
-                        </p>
+                    <p>
+                        <input type="checkbox" id="firstAnswer" name="answer" value="<?php $get_question['first_answer'] ?>">
+                        <label for="firstAnswer"><?php echo $get_question['first_answer'] ?></label>
+                    </p>
 
-                        <p>
-                            <input type="checkbox" id="secondAnswer" name="answer" value="<?php $get_question['second_answer'] ?>">
-                            <label for="secondAnswer"><?php echo $get_question['second_answer'] ?></label>
-                        </p>
-                        
-                        <p>
-                            <input type="checkbox" id="thirdAnswer" name="answer" value="<?php $get_question['third_answer'] ?>">
-                            <label for="thirdAnswer"><?php echo $get_question['third_answer'] ?></label>
-                        </p>
+                    <p>
+                        <input type="checkbox" id="secondAnswer" name="answer" value="<?php $get_question['second_answer'] ?>">
+                        <label for="secondAnswer"><?php echo $get_question['second_answer'] ?></label>
+                    </p>
+                            
+                    <p>
+                        <input type="checkbox" id="thirdAnswer" name="answer" value="<?php $get_question['third_answer'] ?>">
+                        <label for="thirdAnswer"><?php echo $get_question['third_answer'] ?></label>
+                    </p>
 
-                        <input type="submit" value="submit">
-                    </div>
+                    <input type="submit" value="Next">
+
                 </form>
             <?php
-
         }
-            ?>
+    ?>
+</div>
 
 </body>
 </html>
