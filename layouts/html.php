@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <h1 class="categorytitles"><a href="../index.php">HTML</a></h1>
+    <h1 class="categorytitles" id="titleHtml"><a href="../index.php"></a></h1>
 
     <?php
         include('../database/connection_database.php');
@@ -46,5 +46,6 @@
     ?>
 </div>
 
+<script src="../js/script.js"></script>
 </body>
 </html>
